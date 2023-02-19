@@ -8,7 +8,7 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Text(
-          'Splash Screen',
+          'Splash Screens',
         ),
       ),
     );
