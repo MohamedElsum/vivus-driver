@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'features/splash/presentation/pages/splash_screen.dart';
+import 'package:get/get.dart';
+import 'package:vivus_driver/router/router.dart';
+import 'package:vivus_driver/router/routes_constants.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,16 +11,20 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Vivus Driver',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return ScreenUtilInit(
+      designSize: const Size(428, 926),
+      minTextAdapt: true,
+      builder: (_, widget) => GetMaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Vivus Driver',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        getPages: AppRouter.routes,
+        initialRoute: RoutesConstants.splashScreen,
       ),
-      home: const SplashScreen(),
     );
   }
 }
