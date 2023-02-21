@@ -11,7 +11,14 @@ class DefaultThemeColors {
   static const passIcon = Color.fromRGBO(213, 213, 213, 1);
   static const checkboxColor = Colors.green;
   static const checkboxBorderColor = Colors.grey;
+  static const hintTextColor = Colors.grey;
   static const remembermeColor = Color.fromRGBO(53, 53, 53, 0.5);
+  static const authButtonColor = Color.fromRGBO(89, 171, 68, 1);
+  static const authButtonTextColor = Colors.white;
+  static const forgetPassColor = Colors.red;
+  static const needHelp = Colors.black;
+  static const help = Color.fromRGBO(129, 162, 227, 1);
+  static const textfieldBorder = Color.fromRGBO(217, 217, 217, 1);
 }
 
 class FontTextStyle {
@@ -39,5 +46,35 @@ class FontTextStyle {
     fontFamily: Fonts.poppinsSemiBold,
     fontSize: 14.getFontSize(),
     color: DefaultThemeColors.remembermeColor,
+  );
+  static TextStyle authButton = TextStyle(
+    color: DefaultThemeColors.authButtonTextColor,
+    fontFamily: Fonts.poppinsSemiBold,
+    fontSize: 18.getFontSize(),
+  );
+  static TextStyle forgetPass = TextStyle(
+    color: DefaultThemeColors.forgetPassColor,
+    fontFamily: Fonts.poppinsMedium,
+    fontSize: 16.getFontSize(),
+  );
+  static TextStyle needHelp = TextStyle(
+    color: DefaultThemeColors.needHelp,
+    fontFamily: Fonts.poppinsMedium,
+    fontSize: 16.getFontSize(),
+  );
+  static TextStyle help = TextStyle(
+    color: DefaultThemeColors.help,
+    fontFamily: Fonts.poppinsMedium,
+    fontSize: 16.getFontSize(),
+  );
+  static TextStyle hintText = TextStyle(
+    color: DefaultThemeColors.hintTextColor,
+    fontSize: 15.getFontSize(),
+    fontFamily: Fonts.poppinsRegular,
+  );
+  static TextStyle textfieldText = TextStyle(
+    color: DefaultThemeColors.splashBottomTextColor,
+    fontSize: 15.getFontSize(),
+    fontFamily: Fonts.poppinsMedium,
   );
 }

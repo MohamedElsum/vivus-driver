@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:vivus_driver/constants.dart';
+import 'package:vivus_driver/features/login/presentation/widgets/auth_button.dart';
+import 'package:vivus_driver/features/login/presentation/widgets/forget_pass.dart';
+import 'package:vivus_driver/features/login/presentation/widgets/login_header.dart';
+import 'package:vivus_driver/features/login/presentation/widgets/text_form_field.dart';
+import 'package:vivus_driver/features/login/presentation/widgets/textfield_title.dart';
 import '../../../../UIHelpers/app_theme.dart';
 import '../../../../UIHelpers/images.dart';
 
@@ -22,86 +26,35 @@ class _LoginScreenState extends State<LoginScreen> {
         child: SafeArea(
           child: Column(
             children: [
-              SizedBox(
-                height: 86.getHeight(),
-              ),
-              SvgPicture.asset(Images.loginLogo),
-              Text(
-                'Vivus Driver',
-                style: FontTextStyle.splashText,
-              ),
-              SizedBox(
-                height: 34.getHeight(),
-              ),
+              LoginHeader(),
               Form(
                 key: loginFormKey,
                 child: Column(
                   children: [
-                    Container(
-                      alignment: Alignment.topLeft,
-                      padding: EdgeInsets.only(
-                        left: 38.getWidth(),
-                      ),
-                      child: Text(
-                        'Phone Number',
-                        style: FontTextStyle.phoneNumber,
-                      ),
+                    const TextFieldTitle(
+                      title: 'Email Address',
                     ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 38.getWidth()),
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          prefixIconConstraints: BoxConstraints(
-                            maxHeight: 24.getHeight(),
-                            maxWidth: 24.getWidth(),
-                          ),
-                          prefixIcon: SvgPicture.asset(
-                            Images.loginEmail,
-                            colorFilter: const ColorFilter.mode(
-                              DefaultThemeColors.emailIcon,
-                              BlendMode.srcIn,
-                            ),
-                          ),
-                        ),
-                      ),
+                    TextFormInput(
+                      color: DefaultThemeColors.emailIcon,
+                      icon: Images.loginEmailAddress,
+                      obscure: false,
+                      hint: 'Enter Email Address',
                     ),
                     SizedBox(
                       height: 16.getHeight(),
                     ),
-                    Container(
-                      alignment: Alignment.topLeft,
-                      padding: EdgeInsets.only(
-                        left: 38.getWidth(),
-                      ),
-                      child: Text(
-                        'Password',
-                        style: FontTextStyle.password,
-                      ),
+                    const TextFieldTitle(
+                      title: 'Password',
                     ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 38.getWidth()),
-                      child: TextFormField(
-                        obscureText: true,
-                        decoration: InputDecoration(
-                          prefixIconConstraints: BoxConstraints(
-                            minHeight: 24.getHeight(),
-                            minWidth: 24.getWidth(),
-                            maxHeight: 48.getHeight(),
-                            maxWidth: 48.getWidth(),
-                          ),
-                          prefixIcon: SvgPicture.asset(
-                            Images.loginPass,
-                            colorFilter: const ColorFilter.mode(
-                              DefaultThemeColors.passIcon,
-                              BlendMode.srcIn,
-                            ),
-                          ),
-                        ),
-                      ),
+                    TextFormInput(
+                      color: DefaultThemeColors.passIcon,
+                      icon: Images.loginPassword,
+                      obscure: true,
+                      hint: 'Password',
                     ),
                     Container(
                       padding: EdgeInsets.only(
-                        left: 23.getWidth(),
+                        left: 12.getWidth(),
                       ),
                       child: Row(
                         children: [
@@ -127,6 +80,16 @@ class _LoginScreenState extends State<LoginScreen> {
                         ],
                       ),
                     ),
+                    SizedBox(
+                      height: 32.getHeight(),
+                    ),
+                    const AuthButton(
+                      buttonText: 'Login',
+                    ),
+                    SizedBox(
+                      height: 150.getHeight(),
+                    ),
+                    ForgetPassword(),
                   ],
                 ),
               ),

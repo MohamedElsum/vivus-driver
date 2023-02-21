@@ -3,4 +3,6 @@ class Images {
   static const String loginLogo = 'assets/images/loginlogo.svg';
   static const String loginEmail = 'assets/images/email.svg';
   static const String loginPass = 'assets/images/pass.svg';
+  static const String loginEmailAddress = 'assets/images/sms.svg';
+  static const String loginPassword = 'assets/images/lock.svg';
 }
