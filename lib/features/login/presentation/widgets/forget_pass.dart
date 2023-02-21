@@ -8,34 +8,17 @@ class ForgetPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.end,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Text(
-          'Forget my Password',
-          style: FontTextStyle.forgetPass,
+    return Container(
+      alignment: Alignment.bottomRight,
+      padding: const EdgeInsets.only(right: 15),
+      child: Text(
+        'Forget password?',
+        style: TextStyle(
+          color: Color.fromRGBO(89, 171, 68, 1),
+          fontSize: 13,
+          fontFamily: 'PoppinsRegular',
         ),
-        SizedBox(
-          height: 17.getHeight(),
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'You have a problem and want some',
-              style: FontTextStyle.needHelp,
-            ),
-            SizedBox(
-              width: 8.getWidth(),
-            ),
-            Text(
-              'help?',
-              style: FontTextStyle.help,
-            ),
-          ],
-        ),
-      ],
+      ),
     );
   }
 }

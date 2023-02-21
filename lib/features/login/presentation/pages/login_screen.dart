@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vivus_driver/constants.dart';
 import 'package:vivus_driver/features/login/presentation/widgets/auth_button.dart';
+import 'package:vivus_driver/features/login/presentation/widgets/create_account.dart';
 import 'package:vivus_driver/features/login/presentation/widgets/forget_pass.dart';
 import 'package:vivus_driver/features/login/presentation/widgets/login_header.dart';
 import 'package:vivus_driver/features/login/presentation/widgets/text_form_field.dart';
@@ -38,7 +39,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       color: DefaultThemeColors.emailIcon,
                       icon: Images.loginEmailAddress,
                       obscure: false,
-                      hint: 'Enter Email Address',
+                      hint: 'Email Address',
+                      suffix: '',
+                      showPassword: false,
+                      keyBoardType: TextInputType.emailAddress,
                     ),
                     SizedBox(
                       height: 16.getHeight(),
@@ -51,7 +55,14 @@ class _LoginScreenState extends State<LoginScreen> {
                       icon: Images.loginPassword,
                       obscure: true,
                       hint: 'Password',
+                      suffix: Images.eyepass,
+                      showPassword: true,
+                      keyBoardType: TextInputType.text,
                     ),
+                    SizedBox(
+                      height: 5.getHeight(),
+                    ),
+                    ForgetPassword(),
                     Container(
                       padding: EdgeInsets.only(
                         left: 12.getWidth(),
@@ -81,15 +92,15 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     ),
                     SizedBox(
-                      height: 32.getHeight(),
+                      height: 25.getHeight(),
                     ),
                     const AuthButton(
                       buttonText: 'Login',
                     ),
+                    CreateAccount(),
                     SizedBox(
-                      height: 150.getHeight(),
+                      height: 110.getHeight(),
                     ),
-                    ForgetPassword(),
                   ],
                 ),
               ),

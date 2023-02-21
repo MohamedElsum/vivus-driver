@@ -10,6 +10,9 @@ class TextFormInput extends StatelessWidget {
   final String icon;
   final Color color;
   final String hint;
+  final String suffix;
+  final bool showPassword;
+  final TextInputType keyBoardType;
 
   TextFormInput({
     super.key,
@@ -17,6 +20,9 @@ class TextFormInput extends StatelessWidget {
     required this.icon,
     required this.obscure,
     required this.hint,
+    required this.suffix,
+    required this.showPassword,
+    required this.keyBoardType,
   });
 
   @override
@@ -26,9 +32,16 @@ class TextFormInput extends StatelessWidget {
       height: 60.getHeight(),
       child: TextFormField(
         obscureText: obscure,
+        keyboardType: keyBoardType,
         style: FontTextStyle.textfieldText,
         decoration: InputDecoration(
           prefixIconConstraints: BoxConstraints(
+            minWidth: 35.getWidth(),
+            minHeight: 35.getHeight(),
+            maxWidth: 48.getWidth(),
+            maxHeight: 48.getHeight(),
+          ),
+          suffixIconConstraints: BoxConstraints(
             minWidth: 35.getWidth(),
             minHeight: 35.getHeight(),
             maxWidth: 48.getWidth(),
@@ -48,6 +61,12 @@ class TextFormInput extends StatelessWidget {
           hintText: hint,
           isDense: true,
           hintStyle: FontTextStyle.hintText,
+          suffixIcon: showPassword
+              ? Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: SvgPicture.asset(suffix),
+                )
+              : Container(),
           prefixIcon: Padding(
             padding: const EdgeInsets.all(8.0),
             child: SvgPicture.asset(

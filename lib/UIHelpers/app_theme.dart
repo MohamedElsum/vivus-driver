@@ -15,10 +15,12 @@ class DefaultThemeColors {
   static const remembermeColor = Color.fromRGBO(53, 53, 53, 0.5);
   static const authButtonColor = Color.fromRGBO(89, 171, 68, 1);
   static const authButtonTextColor = Colors.white;
-  static const forgetPassColor = Colors.red;
+  static const forgetPassColor = Color.fromRGBO(89, 171, 68, 1);
   static const needHelp = Colors.black;
   static const help = Color.fromRGBO(129, 162, 227, 1);
   static const textfieldBorder = Color.fromRGBO(217, 217, 217, 1);
+  static const createAccountColor = Color.fromRGBO(89, 171, 68, 1);
+  static const notMemberColor = Colors.grey;
 }
 
 class FontTextStyle {
@@ -54,8 +56,8 @@ class FontTextStyle {
   );
   static TextStyle forgetPass = TextStyle(
     color: DefaultThemeColors.forgetPassColor,
-    fontFamily: Fonts.poppinsMedium,
-    fontSize: 16.getFontSize(),
+    fontSize: 13.getFontSize(),
+    fontFamily: Fonts.poppinsRegular,
   );
   static TextStyle needHelp = TextStyle(
     color: DefaultThemeColors.needHelp,
@@ -76,5 +78,28 @@ class FontTextStyle {
     color: DefaultThemeColors.splashBottomTextColor,
     fontSize: 15.getFontSize(),
     fontFamily: Fonts.poppinsMedium,
+  );
+  static TextStyle notMember = TextStyle(
+    fontFamily: Fonts.poppinsRegular,
+    fontSize: 15.getFontSize(),
+    color: DefaultThemeColors.notMemberColor,
+  );
+  static TextStyle createAccount = TextStyle(
+    fontFamily: Fonts.poppinsRegular,
+    fontSize: 15.getFontSize(),
+    color: DefaultThemeColors.createAccountColor,
+  );
+  static TextStyle signupCreateAccount = TextStyle(
+    fontSize: 24.getFontSize(),
+    fontFamily: Fonts.poppinsBold,
+  );
+  static TextStyle uploadImages = TextStyle(
+    fontSize: 17.getFontSize(),
+    fontFamily: Fonts.poppinsSemiBold,
+  );
+  static TextStyle signupHeaderHint = TextStyle(
+    fontFamily: Fonts.poppinsRegular,
+    fontSize: 19.getFontSize(),
+    color: DefaultThemeColors.hintTextColor,
   );
 }
