@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:vivus_driver/UIHelpers/app_theme.dart';
 import 'package:vivus_driver/constants.dart';
 import 'package:vivus_driver/features/forget_password/presentation/widgets/pin_code.dart';
 import 'package:vivus_driver/features/forget_password/presentation/widgets/verify_hint.dart';
 import 'package:vivus_driver/features/login/presentation/widgets/auth_button.dart';
-
+import 'package:vivus_driver/router/routes_constants.dart';
 import '../../../../UIHelpers/images.dart';
 import '../../../signup/presentation/widgets/arrow_back.dart';
 
@@ -68,7 +69,9 @@ class VerificationScreen extends StatelessWidget {
               ),
               AuthButton(
                 buttonText: 'Submit',
-                onpress: () {},
+                onpress: () {
+                  Get.toNamed(RoutesConstants.resetPasswordScreen);
+                },
               ),
               SizedBox(
                 height: 16.getHeight(),

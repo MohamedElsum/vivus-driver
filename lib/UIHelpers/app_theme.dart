@@ -147,4 +147,14 @@ class FontTextStyle {
     fontSize: 16.getFontSize(),
     color: DefaultThemeColors.resendColor,
   );
+  static TextStyle newPassword = TextStyle(
+    fontSize: 27.getFontSize(),
+    fontWeight: FontWeight.bold,
+    fontFamily: Fonts.poppinsMedium,
+  );
+  static TextStyle newPasswordHint = TextStyle(
+    fontSize: 18.getFontSize(),
+    fontFamily: Fonts.poppinsRegular,
+    color: DefaultThemeColors.hintTextColor,
+  );
 }

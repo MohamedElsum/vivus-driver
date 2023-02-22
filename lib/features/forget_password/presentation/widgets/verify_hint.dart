@@ -13,9 +13,12 @@ class VerificationHint extends StatelessWidget {
           'I didn\'t recieve the code!',
           style: FontTextStyle.recieveCode,
         ),
-        Text(
-          ' Resend',
-          style: FontTextStyle.resend,
+        InkWell(
+          onTap: (){},
+          child: Text(
+            ' Resend',
+            style: FontTextStyle.resend,
+          ),
         ),
       ],
     );
