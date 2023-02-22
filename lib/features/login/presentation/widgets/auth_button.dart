@@ -4,14 +4,19 @@ import 'package:vivus_driver/constants.dart';
 
 class AuthButton extends StatelessWidget {
   final String buttonText;
+  final VoidCallback onpress;
 
-  const AuthButton({super.key, required this.buttonText});
+  const AuthButton({
+    super.key,
+    required this.buttonText,
+    required this.onpress,
+  });
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: 380.getWidth(),
-      height: 55.getHeight(),
+      height: 60.getHeight(),
       child: ElevatedButton(
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all<Color>(
@@ -23,7 +28,7 @@ class AuthButton extends StatelessWidget {
             ),
           ),
         ),
-        onPressed: () {},
+        onPressed: onpress,
         child: Text(buttonText, style: FontTextStyle.authButton),
       ),
     );

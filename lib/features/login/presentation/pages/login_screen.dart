@@ -94,8 +94,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     SizedBox(
                       height: 25.getHeight(),
                     ),
-                    const AuthButton(
+                    AuthButton(
                       buttonText: 'Login',
+                      onpress: (){},
                     ),
                     CreateAccount(),
                     SizedBox(

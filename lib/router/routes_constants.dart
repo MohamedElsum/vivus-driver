@@ -3,4 +3,5 @@ class RoutesConstants {
   static const loginScreen = "/loginScreen";
   static const signupScreen = "/signupScreen";
   static const forgetPasswordScreen = "/forgetPasswordScreen";
+  static const verificationScreen = "/verificationScreen";
 }

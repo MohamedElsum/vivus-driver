@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 import 'package:vivus_driver/UIHelpers/app_theme.dart';
 import 'package:vivus_driver/constants.dart';
 import 'package:vivus_driver/features/login/presentation/widgets/text_form_field.dart';
-
+import 'package:vivus_driver/router/routes_constants.dart';
 import '../../../../UIHelpers/images.dart';
 import '../../../login/presentation/widgets/auth_button.dart';
 import '../../../signup/presentation/widgets/arrow_back.dart';
@@ -64,6 +65,9 @@ class ForgetPasswordScreen extends StatelessWidget {
               ),
               AuthButton(
                 buttonText: 'Continue',
+                onpress: () {
+                  Get.toNamed(RoutesConstants.verificationScreen);
+                },
               ),
             ],
           ),

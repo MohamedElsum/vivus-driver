@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
 import 'package:vivus_driver/features/forget_password/presentation/controller/forget_password_bindings.dart';
+import 'package:vivus_driver/features/forget_password/presentation/controller/verification_bindings.dart';
 import 'package:vivus_driver/features/forget_password/presentation/pages/forget_password_screen.dart';
+import 'package:vivus_driver/features/forget_password/presentation/pages/verification_screen.dart';
 import 'package:vivus_driver/features/login/presentation/controllers/login_bindings.dart';
 import 'package:vivus_driver/features/login/presentation/pages/login_screen.dart';
 import 'package:vivus_driver/features/signup/presentation/controller/signup_bindings.dart';
@@ -34,6 +36,12 @@ class AppRouter {
       page: () => ForgetPasswordScreen(),
       transition: Transition.fade,
       binding: ForgetPasswordBindings(),
+    ),
+    GetPage(
+      name: RoutesConstants.verificationScreen,
+      page: () => VerificationScreen(),
+      transition: Transition.fade,
+      binding: VerificationBindings(),
     ),
   ];
 }

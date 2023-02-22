@@ -110,7 +110,10 @@ class SignupScreen extends StatelessWidget {
               SizedBox(
                 height: 10.getHeight(),
               ),
-              AuthButton(buttonText: 'Create Account'),
+              AuthButton(
+                buttonText: 'Create Account',
+                onpress: () {},
+              ),
             ],
           ),
         ),
