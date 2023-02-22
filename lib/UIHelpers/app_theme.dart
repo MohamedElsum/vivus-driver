@@ -20,6 +20,7 @@ class DefaultThemeColors {
   static const help = Color.fromRGBO(129, 162, 227, 1);
   static const textfieldBorder = Color.fromRGBO(217, 217, 217, 1);
   static const createAccountColor = Color.fromRGBO(89, 171, 68, 1);
+  static const forgetScreenHint = Color.fromRGBO(135, 135, 135, 1);
   static const notMemberColor = Colors.grey;
 }
 
@@ -56,7 +57,7 @@ class FontTextStyle {
   );
   static TextStyle forgetPass = TextStyle(
     color: DefaultThemeColors.forgetPassColor,
-    fontSize: 13.getFontSize(),
+    fontSize: 15.getFontSize(),
     fontFamily: Fonts.poppinsRegular,
   );
   static TextStyle needHelp = TextStyle(
@@ -101,5 +102,15 @@ class FontTextStyle {
     fontFamily: Fonts.poppinsRegular,
     fontSize: 19.getFontSize(),
     color: DefaultThemeColors.hintTextColor,
+  );
+  static TextStyle forgetScreenText = TextStyle(
+    fontFamily: Fonts.poppinsSemiBold,
+    fontSize: 27.getFontSize(),
+    color: DefaultThemeColors.splashBottomTextColor,
+  );
+  static TextStyle forgetScreenHint = TextStyle(
+    fontFamily: Fonts.poppinsRegular,
+    fontSize: 16.getFontSize(),
+    color: DefaultThemeColors.forgetScreenHint,
   );
 }

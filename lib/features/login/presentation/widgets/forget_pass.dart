@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vivus_driver/constants.dart';
-
+import 'package:get/get.dart';
+import 'package:vivus_driver/router/routes_constants.dart';
 import '../../../../UIHelpers/app_theme.dart';
 
 class ForgetPassword extends StatelessWidget {
@@ -8,15 +8,16 @@ class ForgetPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      alignment: Alignment.bottomRight,
-      padding: const EdgeInsets.only(right: 15),
-      child: Text(
-        'Forget password?',
-        style: TextStyle(
-          color: Color.fromRGBO(89, 171, 68, 1),
-          fontSize: 13,
-          fontFamily: 'PoppinsRegular',
+    return InkWell(
+      onTap: () {
+        Get.toNamed(RoutesConstants.forgetPasswordScreen);
+      },
+      child: Container(
+        alignment: Alignment.bottomRight,
+        padding: const EdgeInsets.only(right: 15),
+        child: Text(
+          'Forget password?',
+          style: FontTextStyle.forgetPass,
         ),
       ),
     );

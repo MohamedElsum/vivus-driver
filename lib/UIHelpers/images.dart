@@ -12,4 +12,5 @@ class Images {
   static const String carNumber = 'assets/images/car.svg';
   static const String licenseNumber = 'assets/images/license.svg';
   static const String arrowLeft = 'assets/images/arrowleft.svg';
+  static const String forgeticon = 'assets/images/forgeticon.svg';
 }

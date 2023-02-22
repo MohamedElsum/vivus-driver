@@ -4,6 +4,7 @@ import 'package:vivus_driver/UIHelpers/app_theme.dart';
 import 'package:vivus_driver/constants.dart';
 import 'package:vivus_driver/features/login/presentation/widgets/auth_button.dart';
 import 'package:vivus_driver/features/login/presentation/widgets/text_form_field.dart';
+import 'package:vivus_driver/features/signup/presentation/widgets/arrow_back.dart';
 import 'package:vivus_driver/features/signup/presentation/widgets/signup_header.dart';
 import '../../../../UIHelpers/images.dart';
 import 'package:get/get.dart';
@@ -21,16 +22,7 @@ class SignupScreen extends StatelessWidget {
               SizedBox(
                 height: 10.getHeight(),
               ),
-              Row(
-                children: [
-                  InkWell(
-                    onTap: () {
-                      Get.back();
-                    },
-                    child: SvgPicture.asset(Images.arrowLeft),
-                  ),
-                ],
-              ),
+              ArrowBack(),
               SignupHeader(),
               SizedBox(
                 height: 40.getHeight(),
