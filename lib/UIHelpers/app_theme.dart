@@ -27,6 +27,7 @@ class DefaultThemeColors {
   static const resendColor = Color.fromRGBO(89, 171, 68, 1);
   static const notMemberColor = Colors.grey;
   static final pastedPinText = Colors.green.shade600;
+  static const dashedBorderColor = Color.fromRGBO(128, 128, 128, 1);
 }
 
 class FontTextStyle {
@@ -154,6 +155,11 @@ class FontTextStyle {
   );
   static TextStyle newPasswordHint = TextStyle(
     fontSize: 18.getFontSize(),
+    fontFamily: Fonts.poppinsRegular,
+    color: DefaultThemeColors.hintTextColor,
+  );
+  static TextStyle imagesNumber = TextStyle(
+    fontSize: 15.getFontSize(),
     fontFamily: Fonts.poppinsRegular,
     color: DefaultThemeColors.hintTextColor,
   );

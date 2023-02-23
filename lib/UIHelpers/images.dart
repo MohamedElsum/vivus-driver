@@ -14,4 +14,5 @@ class Images {
   static const String arrowLeft = 'assets/images/arrowleft.svg';
   static const String forgeticon = 'assets/images/forgeticon.svg';
   static const String verifyicon = 'assets/images/verifyicon.svg';
+  static const String camera = 'assets/images/camera.svg';
 }

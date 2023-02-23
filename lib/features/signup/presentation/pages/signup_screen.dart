@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:vivus_driver/UIHelpers/app_theme.dart';
 import 'package:vivus_driver/constants.dart';
 import 'package:vivus_driver/features/login/presentation/widgets/auth_button.dart';
 import 'package:vivus_driver/features/login/presentation/widgets/text_form_field.dart';
 import 'package:vivus_driver/features/signup/presentation/widgets/arrow_back.dart';
+import 'package:vivus_driver/features/signup/presentation/widgets/pick_image.dart';
 import 'package:vivus_driver/features/signup/presentation/widgets/signup_header.dart';
 import '../../../../UIHelpers/images.dart';
-import 'package:get/get.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({Key? key}) : super(key: key);
@@ -107,12 +106,16 @@ class SignupScreen extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
               ),
+              PickImageLayout(),
               SizedBox(
-                height: 10.getHeight(),
+                height: 25.getHeight(),
               ),
               AuthButton(
                 buttonText: 'Create Account',
                 onpress: () {},
+              ),
+              SizedBox(
+                height: 35.getHeight(),
               ),
             ],
           ),
