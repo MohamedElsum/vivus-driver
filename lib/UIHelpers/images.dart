@@ -21,4 +21,9 @@ class Images {
   static const String missionsactive = 'assets/images/missionsactive.svg';
   static const String moreinactive = 'assets/images/moreinactive.svg';
   static const String moreactive = 'assets/images/moreactive.svg';
+  static const String recentlogo = 'assets/images/recentlogo.svg';
+  static const String location = 'assets/images/location.svg';
+  static const String calender = 'assets/images/calender.svg';
+  static const String time = 'assets/images/time.svg';
+  static const String category = 'assets/images/category.svg';
 }

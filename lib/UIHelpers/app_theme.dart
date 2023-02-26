@@ -168,4 +168,27 @@ class FontTextStyle {
     fontFamily: Fonts.poppinsMedium,
     color: DefaultThemeColors.checkboxColor,
   );
+  static TextStyle recentMissionsText = TextStyle(
+    fontSize: 19.getFontSize(),
+    fontFamily: Fonts.poppinsSemiBold,
+    color: DefaultThemeColors.timerTextColor,
+  );
+  static TextStyle locationDetails = TextStyle(
+    fontSize: 13.getFontSize(),
+    fontFamily: Fonts.poppinsRegular,
+    color: DefaultThemeColors.timerTextColor,
+  );
+  static TextStyle timeZone = TextStyle(
+    color: DefaultThemeColors.timerTextColor,
+    fontFamily: Fonts.poppinsRegular,
+    fontSize: 7.getFontSize(),
+  );
+  static TextStyle time = TextStyle(
+    color: DefaultThemeColors.timerTextColor,
+    fontFamily: Fonts.poppinsRegular,
+    fontSize: 11.getFontSize(),
+  );
+  static TextStyle textSpan = TextStyle(
+    fontSize: 12.getFontSize(),
+  );
 }
