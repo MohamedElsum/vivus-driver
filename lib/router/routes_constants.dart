@@ -5,4 +5,8 @@ class RoutesConstants {
   static const forgetPasswordScreen = "/forgetPasswordScreen";
   static const verificationScreen = "/verificationScreen";
   static const resetPasswordScreen = "/resetPasswordScreen";
+  static const homeScreen = "/homeScreen";
+  static const recentMissionsScreen = "/recentMissionsScreen";
+  static const missionsScreen = "/missionsScreen";
+  static const moreScreen = "/moreScreen";
 }

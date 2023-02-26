@@ -163,4 +163,9 @@ class FontTextStyle {
     fontFamily: Fonts.poppinsRegular,
     color: DefaultThemeColors.hintTextColor,
   );
+  static TextStyle bottomBarNavigationText = TextStyle(
+    fontSize: 13.getFontSize(),
+    fontFamily: Fonts.poppinsMedium,
+    color: DefaultThemeColors.checkboxColor,
+  );
 }

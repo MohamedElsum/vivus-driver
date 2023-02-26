@@ -15,4 +15,10 @@ class Images {
   static const String forgeticon = 'assets/images/forgeticon.svg';
   static const String verifyicon = 'assets/images/verifyicon.svg';
   static const String camera = 'assets/images/camera.svg';
+  static const String recentinactive = 'assets/images/recentinactive.svg';
+  static const String recentactive = 'assets/images/recentactive.svg';
+  static const String missionsinactive = 'assets/images/missionsinactive.svg';
+  static const String missionsactive = 'assets/images/missionsactive.svg';
+  static const String moreinactive = 'assets/images/moreinactive.svg';
+  static const String moreactive = 'assets/images/moreactive.svg';
 }

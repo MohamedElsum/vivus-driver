@@ -6,8 +6,10 @@ import 'package:vivus_driver/features/login/presentation/widgets/forget_pass.dar
 import 'package:vivus_driver/features/login/presentation/widgets/login_header.dart';
 import 'package:vivus_driver/features/login/presentation/widgets/text_form_field.dart';
 import 'package:vivus_driver/features/login/presentation/widgets/textfield_title.dart';
+import 'package:vivus_driver/router/routes_constants.dart';
 import '../../../../UIHelpers/app_theme.dart';
 import '../../../../UIHelpers/images.dart';
+import 'package:get/get.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({Key? key}) : super(key: key);
@@ -96,7 +98,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     AuthButton(
                       buttonText: 'Login',
-                      onpress: (){},
+                      onpress: () {
+                        Get.toNamed(RoutesConstants.homeScreen);
+                      },
                     ),
                     CreateAccount(),
                     SizedBox(
