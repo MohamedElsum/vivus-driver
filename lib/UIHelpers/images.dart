@@ -32,6 +32,7 @@ class Images {
   static const String notify = 'assets/images/notify.svg';
   static const String contact = 'assets/images/contact.svg';
   static const String setting = 'assets/images/setting.svg';
+  static const String logout = 'assets/images/logout.svg';
   static const String patternpng = 'assets/images/patterpng.png';
   static const String profile = 'assets/images/prof.jpg';
 }

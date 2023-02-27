@@ -31,6 +31,7 @@ class DefaultThemeColors {
   static const missionItemColor = Color.fromRGBO(44, 62, 72, 1);
   static const missionLocationDetails = Colors.white;
   static const editButtonColor = Color.fromRGBO(129, 162, 227, 1);
+  static const logoutButtonColor = Color.fromRGBO(53, 53, 53, 1);
 }
 
 class FontTextStyle {
@@ -208,5 +209,10 @@ class FontTextStyle {
     fontSize: 17.getFontSize(),
     fontFamily: Fonts.poppinsMedium,
     color: DefaultThemeColors.checkboxColor,
+  );
+  static TextStyle appVersion = TextStyle(
+    fontSize: 12.getFontSize(),
+    fontFamily: Fonts.poppinsSemiBold,
+    color: DefaultThemeColors.hintTextColor,
   );
 }
