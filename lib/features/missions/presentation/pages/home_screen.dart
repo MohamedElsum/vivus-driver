@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:stylish_bottom_bar/model/bar_items.dart';
 import 'package:stylish_bottom_bar/stylish_bottom_bar.dart';
 import 'package:vivus_driver/UIHelpers/app_theme.dart';
-import 'package:vivus_driver/features/missions/presentation/pages/missions.dart';
+import 'package:vivus_driver/features/missions/presentation/pages/missions_screen.dart';
 import 'package:vivus_driver/features/missions/presentation/pages/recent_missions.dart';
 import '../../../../UIHelpers/images.dart';
 import '../../../more/presentation/pages/more_screen.dart';

@@ -8,7 +8,7 @@ import 'package:vivus_driver/features/forget_password/presentation/pages/verific
 import 'package:vivus_driver/features/login/presentation/controllers/login_bindings.dart';
 import 'package:vivus_driver/features/login/presentation/pages/login_screen.dart';
 import 'package:vivus_driver/features/missions/presentation/pages/home_screen.dart';
-import 'package:vivus_driver/features/missions/presentation/pages/missions.dart';
+import 'package:vivus_driver/features/missions/presentation/pages/missions_screen.dart';
 import 'package:vivus_driver/features/missions/presentation/pages/recent_missions.dart';
 import 'package:vivus_driver/features/more/presentation/pages/more_screen.dart';
 import 'package:vivus_driver/features/signup/presentation/controller/signup_bindings.dart';

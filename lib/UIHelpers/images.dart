@@ -26,4 +26,12 @@ class Images {
   static const String calender = 'assets/images/calender.svg';
   static const String time = 'assets/images/time.svg';
   static const String category = 'assets/images/category.svg';
+  static const String edit = 'assets/images/edit.svg';
+  static const String profileModule = 'assets/images/profile.svg';
+  static const String pattern = 'assets/images/pattern.svg';
+  static const String notify = 'assets/images/notify.svg';
+  static const String contact = 'assets/images/contact.svg';
+  static const String setting = 'assets/images/setting.svg';
+  static const String patternpng = 'assets/images/patterpng.png';
+  static const String profile = 'assets/images/prof.jpg';
 }

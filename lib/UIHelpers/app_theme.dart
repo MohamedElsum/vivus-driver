@@ -28,6 +28,9 @@ class DefaultThemeColors {
   static const notMemberColor = Colors.grey;
   static final pastedPinText = Colors.green.shade600;
   static const dashedBorderColor = Color.fromRGBO(128, 128, 128, 1);
+  static const missionItemColor = Color.fromRGBO(44, 62, 72, 1);
+  static const missionLocationDetails = Colors.white;
+  static const editButtonColor = Color.fromRGBO(129, 162, 227, 1);
 }
 
 class FontTextStyle {
@@ -190,5 +193,20 @@ class FontTextStyle {
   );
   static TextStyle textSpan = TextStyle(
     fontSize: 12.getFontSize(),
+  );
+  static TextStyle missionLocationDetails = TextStyle(
+    fontSize: 13.getFontSize(),
+    fontFamily: Fonts.poppinsRegular,
+    color: DefaultThemeColors.missionLocationDetails,
+  );
+  static TextStyle username = TextStyle(
+    fontSize: 21.getFontSize(),
+    fontFamily: Fonts.poppinsMedium,
+    color: DefaultThemeColors.timerTextColor,
+  );
+  static TextStyle moreModulesText = TextStyle(
+    fontSize: 17.getFontSize(),
+    fontFamily: Fonts.poppinsMedium,
+    color: DefaultThemeColors.checkboxColor,
   );
 }
