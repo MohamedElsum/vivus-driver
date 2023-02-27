@@ -5,7 +5,17 @@ import 'package:vivus_driver/features/missions/presentation/widgets/time_mission
 import '../../../../UIHelpers/images.dart';
 
 class RecentMissionItem extends StatelessWidget {
-  const RecentMissionItem({Key? key}) : super(key: key);
+  String address;
+  String category;
+  String date;
+  String time;
+
+  RecentMissionItem({
+    required this.address,
+    required this.category,
+    required this.time,
+    required this.date,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -25,15 +35,15 @@ class RecentMissionItem extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const RowRecentMissionItem(
-            text: 'Cairo 20 abou bakr elsedek behaind sobhy kabr resturant',
+          RowRecentMissionItem(
+            text: address,
             icon: Images.location,
           ),
           SizedBox(
             height: 15.getHeight(),
           ),
-          const RowRecentMissionItem(
-            text: 'Plastic',
+          RowRecentMissionItem(
+            text: category,
             icon: Images.category,
           ),
           SizedBox(
@@ -41,14 +51,16 @@ class RecentMissionItem extends StatelessWidget {
           ),
           Row(
             children: [
-              const RowRecentMissionItem(
-                text: '30/3/2022',
+              RowRecentMissionItem(
+                text: date,
                 icon: Images.calender,
               ),
               SizedBox(
                 width: 20.getWidth(),
               ),
-              MissionTime(),
+              MissionTime(
+                time: time,
+              ),
             ],
           ),
         ],

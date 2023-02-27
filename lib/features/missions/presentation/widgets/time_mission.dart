@@ -6,7 +6,11 @@ import '../../../../UIHelpers/app_theme.dart';
 import '../../../../UIHelpers/images.dart';
 
 class MissionTime extends StatelessWidget {
-  const MissionTime({Key? key}) : super(key: key);
+  String time;
+
+  MissionTime({
+    required this.time,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +25,7 @@ class MissionTime extends StatelessWidget {
             style: FontTextStyle.textSpan,
             children: [
               TextSpan(
-                text: '03:40  ',
+                text: '$time ',
                 style: FontTextStyle.time,
               ),
               WidgetSpan(
