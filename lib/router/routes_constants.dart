@@ -10,4 +10,5 @@ class RoutesConstants {
   static const missionsScreen = "/missionsScreen";
   static const moreScreen = "/moreScreen";
   static const contactusScreen = "/contactusScreen";
+  static const notificationScreen = "/notificationScreen";
 }

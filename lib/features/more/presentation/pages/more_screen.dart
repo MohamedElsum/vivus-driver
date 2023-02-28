@@ -70,9 +70,14 @@ class MoreScreen extends StatelessWidget {
               icon: Images.profileModule,
               title: 'Profile',
             ),
-            const MoreModules(
-              icon: Images.notify,
-              title: 'Notifications',
+            InkWell(
+              onTap: () {
+                Get.toNamed(RoutesConstants.notificationScreen);
+              },
+              child: const MoreModules(
+                icon: Images.notify,
+                title: 'Notifications',
+              ),
             ),
             InkWell(
               onTap: () {

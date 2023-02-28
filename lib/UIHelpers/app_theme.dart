@@ -225,4 +225,14 @@ class FontTextStyle {
     fontFamily: Fonts.poppinsMedium,
     color: DefaultThemeColors.timerTextColor,
   );
+  static TextStyle vivusCompany = TextStyle(
+    fontSize: 17.getFontSize(),
+    fontFamily: Fonts.poppinsMedium,
+    color: DefaultThemeColors.missionLocationDetails,
+  );
+  static TextStyle notificationTime = TextStyle(
+    fontSize: 15.getFontSize(),
+    fontFamily: Fonts.poppinsRegular,
+    color: DefaultThemeColors.hintTextColor,
+  );
 }
