@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 import 'package:vivus_driver/UIHelpers/app_theme.dart';
 import 'package:vivus_driver/UIHelpers/images.dart';
 import 'package:vivus_driver/constants.dart';
 import 'package:vivus_driver/features/more/presentation/widgets/logout_button.dart';
 import 'package:vivus_driver/features/more/presentation/widgets/more_modules.dart';
+import 'package:vivus_driver/router/routes_constants.dart';
 
 class MoreScreen extends StatelessWidget {
   const MoreScreen({Key? key}) : super(key: key);
@@ -72,9 +74,14 @@ class MoreScreen extends StatelessWidget {
               icon: Images.notify,
               title: 'Notifications',
             ),
-            const MoreModules(
-              icon: Images.contact,
-              title: 'Contact Us',
+            InkWell(
+              onTap: () {
+                Get.toNamed(RoutesConstants.contactusScreen);
+              },
+              child: const MoreModules(
+                icon: Images.contact,
+                title: 'Contact Us',
+              ),
             ),
             const MoreModules(
               icon: Images.setting,

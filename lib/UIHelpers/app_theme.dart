@@ -215,4 +215,14 @@ class FontTextStyle {
     fontFamily: Fonts.poppinsSemiBold,
     color: DefaultThemeColors.hintTextColor,
   );
+  static TextStyle contactusHeader = TextStyle(
+    fontSize: 20.getFontSize(),
+    fontFamily: Fonts.poppinsMedium,
+    color: DefaultThemeColors.missionLocationDetails,
+  );
+  static TextStyle contactusModuleText = TextStyle(
+    fontSize: 17.getFontSize(),
+    fontFamily: Fonts.poppinsMedium,
+    color: DefaultThemeColors.timerTextColor,
+  );
 }

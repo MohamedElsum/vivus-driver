@@ -33,6 +33,9 @@ class Images {
   static const String contact = 'assets/images/contact.svg';
   static const String setting = 'assets/images/setting.svg';
   static const String logout = 'assets/images/logout.svg';
+  static const String phone = 'assets/images/phone.svg';
+  static const String facebook = 'assets/images/facebook.svg';
+  static const String whatsapp = 'assets/images/whatsapp.svg';
   static const String patternpng = 'assets/images/patterpng.png';
   static const String profile = 'assets/images/prof.jpg';
 }
