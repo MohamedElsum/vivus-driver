@@ -49,6 +49,7 @@ class MoreScreen extends StatelessWidget {
                     child: Container(
                       width: 25.getWidth(),
                       height: 25.getHeight(),
+                      padding: const EdgeInsets.all(3),
                       decoration: BoxDecoration(
                         color: DefaultThemeColors.editButtonColor,
                         borderRadius: BorderRadius.circular(10),
