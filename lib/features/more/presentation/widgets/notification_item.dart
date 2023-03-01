@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:vivus_driver/UIHelpers/app_theme.dart';
 import 'package:vivus_driver/UIHelpers/images.dart';
 import 'package:vivus_driver/constants.dart';
@@ -28,10 +27,10 @@ class NotificationItem extends StatelessWidget {
           top: -10.getHeight(),
           child: const CircleAvatar(
             radius: 25,
-            backgroundColor: Colors.white,
+            backgroundColor: DefaultThemeColors.missionLocationDetails,
             child: CircleAvatar(
               radius: 20,
-              backgroundColor: Colors.white,
+              backgroundColor: DefaultThemeColors.missionLocationDetails,
               backgroundImage: AssetImage(Images.notificationlogo),
             ),
           ),
