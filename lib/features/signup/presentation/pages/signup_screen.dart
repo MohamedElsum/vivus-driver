@@ -34,6 +34,7 @@ class SignupScreen extends StatelessWidget {
                 suffix: '',
                 showPassword: false,
                 keyBoardType: TextInputType.text,
+                isEditProfile: false,
               ),
               SizedBox(
                 height: 15.getHeight(),
@@ -46,6 +47,7 @@ class SignupScreen extends StatelessWidget {
                 suffix: '',
                 showPassword: false,
                 keyBoardType: TextInputType.emailAddress,
+                isEditProfile: false,
               ),
               SizedBox(
                 height: 15.getHeight(),
@@ -58,6 +60,7 @@ class SignupScreen extends StatelessWidget {
                 suffix: Images.eyepass,
                 showPassword: true,
                 keyBoardType: TextInputType.text,
+                isEditProfile: false,
               ),
               SizedBox(
                 height: 15.getHeight(),
@@ -70,6 +73,7 @@ class SignupScreen extends StatelessWidget {
                 suffix: '',
                 showPassword: false,
                 keyBoardType: TextInputType.number,
+                isEditProfile: false,
               ),
               SizedBox(
                 height: 15.getHeight(),
@@ -82,6 +86,7 @@ class SignupScreen extends StatelessWidget {
                 suffix: '',
                 showPassword: false,
                 keyBoardType: TextInputType.number,
+                isEditProfile: false,
               ),
               SizedBox(
                 height: 15.getHeight(),
@@ -94,6 +99,7 @@ class SignupScreen extends StatelessWidget {
                 suffix: '',
                 showPassword: false,
                 keyBoardType: TextInputType.number,
+                isEditProfile: false,
               ),
               SizedBox(
                 height: 20.getHeight(),

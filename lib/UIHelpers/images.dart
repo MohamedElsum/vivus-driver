@@ -23,11 +23,15 @@ class Images {
   static const String moreactive = 'assets/images/moreactive.svg';
   static const String recentlogo = 'assets/images/recentlogo.svg';
   static const String location = 'assets/images/location.svg';
+  static const String done = 'assets/images/done.svg';
   static const String calender = 'assets/images/calender.svg';
   static const String time = 'assets/images/time.svg';
   static const String category = 'assets/images/category.svg';
   static const String edit = 'assets/images/edit.svg';
   static const String profileModule = 'assets/images/profile.svg';
+  static const String city = 'assets/images/city.svg';
+  static const String changepassword = 'assets/images/changepassword.svg';
+  static const String editProfile = 'assets/images/editprofile.svg';
   static const String pattern = 'assets/images/pattern.svg';
   static const String notify = 'assets/images/notify.svg';
   static const String contact = 'assets/images/contact.svg';

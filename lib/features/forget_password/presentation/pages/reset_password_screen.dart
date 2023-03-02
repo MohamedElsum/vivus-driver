@@ -54,6 +54,7 @@ class ResetPasswordScreen extends StatelessWidget {
                 suffix: Images.eyepass,
                 showPassword: true,
                 keyBoardType: TextInputType.text,
+                isEditProfile: false,
               ),
               SizedBox(
                 height: 16.getHeight(),
@@ -69,6 +70,7 @@ class ResetPasswordScreen extends StatelessWidget {
                 suffix: Images.eyepass,
                 showPassword: true,
                 keyBoardType: TextInputType.text,
+                isEditProfile: false,
               ),
               SizedBox(
                 height: 64.getHeight(),

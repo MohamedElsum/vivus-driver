@@ -11,6 +11,7 @@ class TextFormInput extends StatelessWidget {
   final String suffix;
   final bool showPassword;
   final TextInputType keyBoardType;
+  final bool isEditProfile;
 
   TextFormInput({
     super.key,
@@ -21,6 +22,7 @@ class TextFormInput extends StatelessWidget {
     required this.suffix,
     required this.showPassword,
     required this.keyBoardType,
+    required this.isEditProfile,
   });
 
   @override
@@ -58,13 +60,20 @@ class TextFormInput extends StatelessWidget {
           ),
           hintText: hint,
           isDense: true,
-          hintStyle: FontTextStyle.hintText,
+          hintStyle: isEditProfile
+              ? FontTextStyle.hintEditProfileText
+              : FontTextStyle.hintText,
           suffixIcon: showPassword
               ? Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: SvgPicture.asset(suffix),
                 )
-              : Container(),
+              : isEditProfile
+                  ? Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SvgPicture.asset(suffix),
+                    )
+                  : Container(),
           prefixIcon: Padding(
             padding: const EdgeInsets.all(8.0),
             child: SvgPicture.asset(

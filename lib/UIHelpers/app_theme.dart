@@ -13,6 +13,7 @@ class DefaultThemeColors {
   static const checkboxColor = Colors.green;
   static const checkboxBorderColor = Colors.grey;
   static const hintTextColor = Colors.grey;
+  static const hintEditTextColor = Colors.black;
   static const remembermeColor = Color.fromRGBO(53, 53, 53, 0.5);
   static const authButtonColor = Color.fromRGBO(89, 171, 68, 1);
   static const authButtonTextColor = Colors.white;
@@ -32,6 +33,7 @@ class DefaultThemeColors {
   static const missionLocationDetails = Colors.white;
   static const editButtonColor = Color.fromRGBO(129, 162, 227, 1);
   static const logoutButtonColor = Color.fromRGBO(53, 53, 53, 1);
+  static const oldPasswordColor = Color.fromRGBO(150, 159, 164, 1);
 }
 
 class FontTextStyle {
@@ -84,6 +86,11 @@ class FontTextStyle {
     color: DefaultThemeColors.hintTextColor,
     fontSize: 15.getFontSize(),
     fontFamily: Fonts.poppinsRegular,
+  );
+  static TextStyle hintEditProfileText = TextStyle(
+    color: DefaultThemeColors.hintEditTextColor,
+    fontSize: 15.getFontSize(),
+    fontFamily: Fonts.poppinsMedium,
   );
   static TextStyle textfieldText = TextStyle(
     color: DefaultThemeColors.splashBottomTextColor,
@@ -234,5 +241,15 @@ class FontTextStyle {
     fontSize: 15.getFontSize(),
     fontFamily: Fonts.poppinsRegular,
     color: DefaultThemeColors.hintTextColor,
+  );
+  static TextStyle changePassword = TextStyle(
+    fontSize: 17.getFontSize(),
+    fontFamily: Fonts.poppinsMedium,
+    color: DefaultThemeColors.authButtonTextColor,
+  );
+  static TextStyle oldPassword = TextStyle(
+    fontSize: 17.getFontSize(),
+    fontFamily: Fonts.poppinsMedium,
+    color: DefaultThemeColors.oldPasswordColor,
   );
 }

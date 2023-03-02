@@ -67,9 +67,14 @@ class MoreScreen extends StatelessWidget {
             SizedBox(
               height: 50.getHeight(),
             ),
-            const MoreModules(
-              icon: Images.profileModule,
-              title: 'Profile',
+            InkWell(
+              onTap: () {
+                Get.toNamed(RoutesConstants.profileScreen);
+              },
+              child: const MoreModules(
+                icon: Images.profileModule,
+                title: 'Profile',
+              ),
             ),
             InkWell(
               onTap: () {

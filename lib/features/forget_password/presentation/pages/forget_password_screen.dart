@@ -59,6 +59,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                 suffix: '',
                 showPassword: false,
                 keyBoardType: TextInputType.text,
+                isEditProfile: false,
               ),
               SizedBox(
                 height: 32.getHeight(),

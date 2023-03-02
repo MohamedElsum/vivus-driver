@@ -45,6 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       suffix: '',
                       showPassword: false,
                       keyBoardType: TextInputType.emailAddress,
+                      isEditProfile: false,
                     ),
                     SizedBox(
                       height: 16.getHeight(),
@@ -60,6 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       suffix: Images.eyepass,
                       showPassword: true,
                       keyBoardType: TextInputType.text,
+                      isEditProfile: false,
                     ),
                     SizedBox(
                       height: 5.getHeight(),

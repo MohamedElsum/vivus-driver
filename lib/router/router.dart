@@ -12,9 +12,11 @@ import 'package:vivus_driver/features/missions/presentation/pages/missions_scree
 import 'package:vivus_driver/features/missions/presentation/pages/recent_missions.dart';
 import 'package:vivus_driver/features/more/presentation/controller/contactus_bindings.dart';
 import 'package:vivus_driver/features/more/presentation/controller/notification_binding.dart';
+import 'package:vivus_driver/features/more/presentation/controller/profile_binding.dart';
 import 'package:vivus_driver/features/more/presentation/pages/contactus_screen.dart';
 import 'package:vivus_driver/features/more/presentation/pages/more_screen.dart';
 import 'package:vivus_driver/features/more/presentation/pages/notification_screen.dart';
+import 'package:vivus_driver/features/more/presentation/pages/profile_screen.dart';
 import 'package:vivus_driver/features/signup/presentation/controller/signup_bindings.dart';
 import 'package:vivus_driver/features/signup/presentation/pages/signup_screen.dart';
 import 'package:vivus_driver/features/splash/presentation/controller/splash_binding.dart';
@@ -97,6 +99,12 @@ class AppRouter {
       page: () => NotificationScreen(),
       transition: Transition.fade,
       binding: NotificationsBindings(),
+    ),
+    GetPage(
+      name: RoutesConstants.profileScreen,
+      page: () => ProfileScreen(),
+      transition: Transition.fade,
+      binding: ProfileBindings(),
     ),
   ];
 }
